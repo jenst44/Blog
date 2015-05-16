@@ -1,0 +1,89 @@
+* {
+	padding: 0;
+	margin:0;
+}
+
+body {
+	background-image: url("http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg");
+	display: static;
+	background-position: center;
+}
+
+#header {
+	background-color: #2FA788;
+	color:white;
+	opacity: .7;
+}
+
+#dropmenu {
+	background-color: #2A4B54;
+	border-color: #2FA788;
+	color:white;
+}
+
+#linkcolor {
+	background-color: #2FA788;
+	border-color:#2A4B54; 
+}
+
+.post {
+	background-color: #2A4B54;
+	border-color: #2FA788;
+	opacity: .8;
+	padding:20px;
+}
+
+.post h2 {
+	color: #C31504;
+}
+
+.post p {
+	color: #2FA788;
+}
+
+.cloudthumb{
+	border-color: #2FA788;
+	text-align: center;
+	background-image: url("http://www.shootingstarlogbook.com/wp-content/uploads/2014/06/Trillions.jpg");
+}
+
+#sidebar {
+	float:right;
+}
+
+.sideslide {
+	padding: 10px 20px;
+	background-color: #C31504;
+	color:white;
+	border: 1px solid #2FA788;
+	display: inline-block;
+	cursor: pointer;
+	;
+}
+
+.blog {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#posttoblog {
+	padding: 10px 20px;
+	background-color: #C31504;
+	color:white;
+	border: 1px solid #2FA788;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#focusinfo{
+	display: none;
+}
+
+#appendbar {
+	padding: 10px 20px;
+	background-color: #C31504;
+	color:white;
+	border: 1px solid #2FA788;
+	display: inline-block;
+	cursor: pointer;
+}

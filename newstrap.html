@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jens</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+	<link rel="stylesheet" href="./code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script>	
+	$(document).ready(function(){
+		$('h1').hover(function(){
+			$('h1').text("Ciao e Benvenuto!");
+		},function(){
+			$('h1').text("Hello & Welcome!");
+		});
+
+		$('#focussearch').click(function(){
+			$(this).attr("placeholder","Wut?");
+		});
+
+		$(".su").click(function(){
+			$("#sidebartext").toggle("slow" );
+			if($(this).text()=="Disappear"){
+				$(".su").text("Show");
+			}
+			else if($(this).text()=="Show") {
+				$(".su").text("Disappear");
+			}
+		});
+
+		$("#posttoblog").click(function(){
+			var focussearch = $("#focussearch").val();
+			$("#blogpost").html(focussearch);
+			$("#focusinfo").css("display","inline").fadeOut(3000);
+		});
+
+		$("#appendbar").click(function(){
+			$("#appended").append("Mufugging Appended");
+			$(this).slideUp("slow");
+		});
+
+	});
+	</script>
+
+
+
+</head>
+<body id="background">
+	<div class="container-fluid">
+		<!--Header-->
+		<div class="row">
+			<div class="col-md-12">
+				<div id="header" class="jumbotron text-center">
+					<h1>Hello & Welcome!</h1>
+				</div>
+			</div>
+		</div>
+		<!--Searchbar-->
+		<div class="row">
+			<div class="col-md-12">
+				<nav id="dropmenu" class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">Brand</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a id="linkcolor" href="https://www.facebook.com/jens.townsdin">Jens<span class="sr-only">(current)</span></a></li>
+				        <li><a href="https://www.linkedin.com/pub/jens-townsdin/66/963/71b">Linkedin</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cool Link <span class="caret"></span></a>
+				          <ul class="dropdown-menu" role="menu">
+				            <li><a href="http://www.reddit.com">Reddit</a></li>
+				            <li><a href="http://www.youtube.com">YouTube</a></li>
+				            <li><a href="http://www.facebook.com">Facebook</a></li>
+				            <li class="divider"></li>
+				            <li><a href="https://soundcloud.com/jenst-1">My Soundcloud</a></li>
+				            <li class="divider"></li>
+				            <li><a href="http://www.codingdojo.com">Coding Dojo</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <form class="navbar-form navbar-left" role="search">
+				        <div class="form-group">
+				          <input id="focussearch" type="text" class="form-control" placeholder="Search">
+				          <p id="posttoblog">Post to blog!</p>
+				          <p id="focusinfo">Your info is now in the Blog!</p>
+				          <p id="appendbar">Append</p>
+				          <p id="appended"></p>
+				        </div>
+				      </form>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">Townsdin</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu" role="menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+		</div>
+		<!--Sidebar-->
+		<div id="sidebar" class="col-md-4">
+			<div class="post">
+				<div>
+					<h6 class="sideslide su">Disappear</h6>
+				</div>
+				<div id="sidebartext">
+					<h2>My name is JiggaJiggaJens</h2>
+					<p>Located to the left are some dope beats that you should most definitely peep. I created this blog to test my new skills in html, CSS, Bootstrap, and Jquery. Enjoy.</p>
+				</div>
+			</div>
+		</div>
+		<!--ThumbNails-->
+		<div class="row">
+			<div class="col-md-2 col-md-push-1">
+				<a class="cloudthumb thumbnail" href="https://soundcloud.com/jenst-1/the-star-shower-mix">
+					<img src="http://www.shootingstarlogbook.com/wp-content/uploads/2014/06/Trillions.jpg">
+      				<p>Star Shower Mix</p>
+   				</a>
+			</div>
+			<div class="col-md-2 col-md-push-1">
+				<a class="cloudthumb thumbnail" href="https://soundcloud.com/jenst-1/slurring-j-brownies-dream-mix">
+					<img src="http://cdn.buzznet.com/assets/users16/audrey/default/large-msg-132372586253.jpg">
+      				<p>Slurring Remix</p>
+   				</a>
+			</div>
+			<div class="col-md-2 col-md-push-1">
+				<a class="cloudthumb thumbnail" href="https://soundcloud.com/sanebeats/bonobo-terrapin-sanebeats-remix">
+					<img src="http://blog.soton.ac.uk/bmlr1g13/files/2013/12/2001.jpg">
+      				<p>Terrapin</p>
+   				</a>
+   			</div>
+		</div>
+		<!--ThumbNails-->
+		<div class="row">
+			<div id="soundclouder" class="col-md-8">
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/108016707&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			</div>
+		</div>
+		<div class="row blog">
+			<div class="col-md-6">
+				<div class="post">
+					<h2>Blog post</h2>
+					<p id="blogpost"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
